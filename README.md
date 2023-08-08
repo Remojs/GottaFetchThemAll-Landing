@@ -8,6 +8,6 @@
 # ENGLISH
 
 ## Gotta Fetch Them All - Pokémon API
-**Welcome to the PokéAPI Landing Page project!** This is a web application built using Vite, React, and pure CSS to showcase and explain the functionalities of the  Gotta Fetch Them All - Pokémon API. The API is a powerful tool for accessing information about various Pokémon, including their details, abilities, types, and more.
+**Welcome to the Gotta Fetch Them All Landing Page project!** This is a web application built using Vite, React, and pure CSS to showcase and explain the functionalities of the  Gotta Fetch Them All - Pokémon API. The API is a powerful tool for accessing information about various Pokémon, including their details, abilities, types, and more.
 **API REPOSITORY**: https://github.com/Remojs/GottaFetchThemAll-API
 **Deploy on Netlify**: https://gottafetchthemall-api.netlify.app/
