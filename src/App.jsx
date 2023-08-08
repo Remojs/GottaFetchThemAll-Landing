@@ -20,6 +20,10 @@ function App() {
     getRandom()
     getRandom()
     getRandom()
+    getRandom()
+    getRandom()
+    getRandom()
+    getRandom()
   }, []);
 
   const assignBackgroundColor = (type) =>  {
