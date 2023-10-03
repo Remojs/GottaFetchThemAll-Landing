@@ -96,8 +96,8 @@ function App() {
         <h2>Enjoy the API with:</h2>
 
         <div className="data">
-          <p className="data-values">  Pokemons: <span className='data-value'> 1010 </span> </p>
-          <p className="data-values">  Abilitys: <span className='data-value'> 298 </span> </p>
+          <p className="data-values">  Pokemons: <span className='data-value'> 1017 </span> </p>
+          <p className="data-values">  Abilitys: <span className='data-value'> 301 </span> </p>
           <p className="data-values">  Generations: <span className='data-value'> 9 </span> </p>
         </div>
         <div className="social">
