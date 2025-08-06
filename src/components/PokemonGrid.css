@@ -15,29 +15,33 @@
   font-weight: 700;
   color: #000000;
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #666666;
+  color: #333333;
   margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 .refresh-btn {
-  background-color: #E3350D;
+  background: linear-gradient(135deg, #ff1744 0%, #d50000 100%);
   color: #ffffff;
   border: none;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 23, 68, 0.4);
 }
 
 .refresh-btn:hover {
-  background-color: #c42a08;
+  background: linear-gradient(135deg, #d50000 0%, #b71c1c 100%);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 23, 68, 0.6);
 }
 
 .pokemon-grid {
@@ -55,20 +59,21 @@
 }
 
 .pokemon-card {
-  background-color: #ffffff;
-  border: 2px solid #E3350D;
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 1) 100%);
+  border: none;
+  border-radius: 16px;
   padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(227, 53, 13, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .pokemon-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(227, 53, 13, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255, 23, 68, 0.25);
 }
 
 .pokemon-card::before {
@@ -77,8 +82,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #E3350D, #ff4d1a);
+  height: 4px;
+  background: linear-gradient(90deg, #ff1744, #d50000, #ff5722, #e53935);
 }
 
 .loading-card {
@@ -91,8 +96,8 @@
 .loading-spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid #f0f0f0;
-  border-top: 3px solid #E3350D;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #ff1744;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -139,7 +144,7 @@
 }
 
 .pokemon-name a:hover {
-  color: #E3350D;
+  color: #ff1744;
 }
 
 .pokemon-types {
@@ -178,7 +183,7 @@
 }
 
 .pokemon-ability a:hover {
-  color: #E3350D;
+  color: #ff1744;
 }
 
 /* Responsive Design */

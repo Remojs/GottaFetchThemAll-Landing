@@ -10,11 +10,12 @@
 }
 
 .main-footer {
-  background-color: #000000;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   color: #ffffff;
   padding: 2rem;
   text-align: center;
   margin-top: auto;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .footer-social {
@@ -30,14 +31,16 @@
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  background-color: #333333;
+  background: linear-gradient(135deg, #333333 0%, #444444 100%);
   border-radius: 50%;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .social-link:hover {
-  background-color: #E3350D;
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ff1744 0%, #d50000 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 23, 68, 0.4);
 }
 
 .social-icon {
