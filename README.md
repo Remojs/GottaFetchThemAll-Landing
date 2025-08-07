@@ -3,7 +3,7 @@
 <div align="center">
   <img src="public/GCTA.png" alt="Gotta Fetch Them All Logo" width="120" height="120">
   
-  **Una landing page moderna y cyberpunk para la API de Pokémon más completa**
+  **Una landing page moderna y para la API de Pokémon más completa**
   
   [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-6.3.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -75,47 +75,6 @@ gfta-landing/
 └── README.md                   # Este archivo
 ```
 
-## 🛠️ Instalación y Configuración
-
-### Prerrequisitos
-- Node.js 16.0+ 
-- npm 8.0+ o yarn 1.22+
-
-### Pasos de Instalación
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/Remojs/GottaFetchThemAll-Landing.git
-   cd GottaFetchThemAll-Landing
-   ```
-
-2. **Instalar dependencias**
-   ```bash
-   npm install
-   # o
-   yarn install
-   ```
-
-3. **Ejecutar en modo desarrollo**
-   ```bash
-   npm run dev
-   # o
-   yarn dev
-   ```
-
-4. **Construir para producción**
-   ```bash
-   npm run build
-   # o
-   yarn build
-   ```
-
-5. **Previsualizar build de producción**
-   ```bash
-   npm run preview
-   # o
-   yarn preview
-   ```
 
 ## 📚 API Documentation
 
@@ -146,89 +105,6 @@ La landing page consume la **Gotta Fetch Them All API**, una API RESTful complet
 - ✅ **Sin límite de requests**
 - ✅ **Datos actualizados** hasta la 9ª generación
 - ✅ **Endpoints RESTful** intuitivos
-
-## 🎨 Características de Diseño
-
-### Paleta de Colores
-- **Gradiente Principal**: `#ff1744` → `#d50000` → `#ff5722` → `#e53935` → `#c62828`
-- **Acentos Cyberpunk**: Cyan (`#00ffff`) y Magenta (`#ff00ff`)
-- **Neutros**: Blancos con transparencias y negros profundos
-
-### Efectos Visuales
-- **Grid Cyberpunk**: Patrones de líneas con efectos de difuminado
-- **Glassmorphism**: Transparencias con backdrop-filter
-- **Shadows & Glows**: Sombras suaves y brillos neón
-- **Smooth Transitions**: Animaciones de 0.3s con easing
-
-### Responsive Breakpoints
-- **Desktop**: > 1024px
-- **Tablet**: 768px - 1024px
-- **Mobile**: < 768px
-- **Small Mobile**: < 480px
-
-## 🚀 Funcionalidades
-
-### 🎲 Grid de Pokémon Aleatorio
-- Muestra 8 Pokémon aleatorios en un grid 4x2
-- Botón de "Refresh Collection" para obtener nuevos Pokémon
-- Cards con efectos hover y información detallada
-- Enlaces directos a la API para cada Pokémon
-
-### 📖 Documentación Interactiva
-- Sección completa con todos los endpoints
-- Ejemplos clickeables para cada endpoint
-- Estadísticas en tiempo real de la API
-- Cards con efectos visuales modernos
-
-### 🧭 Navegación Optimizada
-- Navbar fijo con efecto glassmorphism
-- Responsive con título oculto en mobile
-- Botones con gradientes y efectos hover
-- Enlaces a repositorio y documentación
-
-### 🔗 Footer Social
-- Enlaces a perfiles sociales del desarrollador
-- Iconos con efectos hover animados
-- Diseño minimalista y elegante
-
-## 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Si quieres contribuir:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📝 Scripts Disponibles
-
-- `npm run dev` - Inicia el servidor de desarrollo
-- `npm run build` - Construye la aplicación para producción
-- `npm run preview` - Previsualiza el build de producción
-- `npm run lint` - Ejecuta el linter para revisar el código
-
-## 🐛 Reportar Issues
-
-Si encuentras algún problema o tienes una sugerencia, por favor [crea un issue](https://github.com/Remojs/GottaFetchThemAll-Landing/issues) con la siguiente información:
-
-- Descripción del problema
-- Pasos para reproducirlo
-- Comportamiento esperado vs. actual
-- Screenshots (si aplica)
-- Información del navegador/dispositivo
-
-## 📜 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 👨‍💻 Autor
-
-**Thiago Zambonini (Remojs)**
-
-- 🌐 [GitHub](https://github.com/Remojs)
-- 💼 [LinkedIn](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
-- 🐦 [Twitter](https://twitter.com/Remocodee)
 
 ---
 
