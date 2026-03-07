@@ -1,4 +1,4 @@
-# 🔥 Gotta Fetch Them All - Landing Page
+# Gotta Fetch Them All - Landing Page
 
 <div align="center">
   <img src="public/GCTA.png" alt="Gotta Fetch Them All Logo" width="120" height="120">
@@ -10,23 +10,23 @@
   [![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
   [![Axios](https://img.shields.io/badge/Axios-1.4.0-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
-  [🌐 Demo en Vivo](https://gottafetchthemall-landing.vercel.app) • [📚 API Documentation](https://gottafetchthemall.onrender.com/) • [🔗 API Repository](https://github.com/Remojs/GottaFetchThemAll-API)
+  [Demo en Vivo](https://gottafetchthemall-landing.vercel.app) • [API Documentation](https://gottafetchthemall.onrender.com/) • [API Repository](https://github.com/Remojs/GottaFetchThemAll-API)
 </div>
 
-## 🎯 Objetivo del Proyecto
+## Objetivo del Proyecto
 
 **Gotta Fetch Them All** es una landing page interactiva diseñada para mostrar las capacidades de la API RESTful de Pokémon más completa disponible. El proyecto combina un diseño moderno con estética cyberpunk, proporcionando una experiencia visual impactante mientras demuestra la funcionalidad de la API.
 
-### ✨ Características Principales
+### Características Principales
 
-- 🎨 **Diseño Cyberpunk**: Gradientes vibrantes rojos con efectos de grid difuminado
-- 📱 **Totalmente Responsivo**: Adaptado para todos los dispositivos
-- ⚡ **Carga Rápida**: Construido con Vite para máximo rendimiento
-- 🔄 **Datos en Tiempo Real**: Integración directa con la API de Pokémon
-- 🎭 **Efectos Visuales**: Animaciones fluidas y transiciones suaves
-- 🌐 **SEO Optimizado**: Estructura semántica y metadatos apropiados
+- **Diseño Cyberpunk**: Gradientes vibrantes rojos con efectos de grid difuminado
+- **Totalmente Responsivo**: Adaptado para todos los dispositivos
+- **Carga Rápida**: Construido con Vite para máximo rendimiento
+- **Datos en Tiempo Real**: Integración directa con la API de Pokémon
+- **Efectos Visuales**: Animaciones fluidas y transiciones suaves
+- **SEO Optimizado**: Estructura semántica y metadatos apropiados
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Frontend Core
 - **React 18.2.0** - Biblioteca principal para la UI
@@ -45,7 +45,7 @@
 - **Responsive Design** - Mobile-first approach
 - **Smooth Animations** - Transiciones CSS suaves
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 gfta-landing/
@@ -76,39 +76,100 @@ gfta-landing/
 ```
 
 
-## 📚 API Documentation
+## API Documentation
 
-La landing page consume la **Gotta Fetch Them All API**, una API RESTful completa con los siguientes endpoints:
+Base URL: `https://gottafetchthemall.onrender.com`
 
-### 🔗 Endpoints Principales
+### Data Model — Pokemon
 
-| Método | Endpoint | Descripción | Ejemplo |
-|--------|----------|-------------|---------|
-| GET | `/pokedex` | Obtener todos los Pokémon | [Ver ejemplo](https://gottafetchthemall.onrender.com/pokedex) |
-| GET | `/pokedex/number/{id}` | Obtener Pokémon por ID | [Ver ejemplo](https://gottafetchthemall.onrender.com/pokedex/number/25) |
-| GET | `/pokedex/name/{name}` | Buscar Pokémon por nombre | [Ver ejemplo](https://gottafetchthemall.onrender.com/pokedex/name/pikachu) |
-| GET | `/pokedex/type/{type}` | Obtener Pokémon por tipo | [Ver ejemplo](https://gottafetchthemall.onrender.com/pokedex/type/electric) |
-| GET | `/pokedex/ability/{ability}` | Buscar por habilidad | [Ver ejemplo](https://gottafetchthemall.onrender.com/pokedex/ability/static) |
-| GET | `/pokedex/generation/{gen}` | Filtrar por generación | [Ver ejemplo](https://gottafetchthemall.onrender.com/pokedex/generation/1) |
+Each document in the collection has the following structure:
 
-### 📊 Estadísticas de la API
+```json
+{
+  "_id": "6394ccde0444413377f32891",
+  "ID": 25,
+  "name": "pikachu",
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+  "first_type": "electric",
+  "second_type": null,
+  "ability": "static",
+  "height": "0.4m",
+  "weight": "6kg",
+  "stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "special_attack": 50,
+    "special_defense": 50,
+    "speed": 90
+  }
+}
+```
 
-- **1,010** Pokémon totales
-- **298** Habilidades únicas
-- **9** Generaciones disponibles
-- **18** Tipos diferentes
+### Valid Values
 
-### 🔧 Características de la API
+**Types** (`first_type` / `second_type`)
 
-- ✅ **CORS habilitado** para aplicaciones web
-- ✅ **Respuestas en JSON** estructuradas
-- ✅ **Sin límite de requests**
-- ✅ **Datos actualizados** hasta la 9ª generación
-- ✅ **Endpoints RESTful** intuitivos
+```
+normal  fire  water  grass  flying  fighting  poison  electric
+ground  rock  psychic  ice  bug  ghost  steel  dragon  dark  fairy
+```
+
+**Stats** — `hp` · `attack` · `defense` · `special_attack` · `special_defense` · `speed`
+
+**Generations** — 1 (1–151) · 2 (152–251) · 3 (252–386) · 4 (387–494) · 5 (495–649) · 6 (650–721) · 7 (722–809) · 8 (810–905) · 9 (906–1010)
+
+### Endpoints
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/pokedex` | All Pokémon — paginated, filterable by `first_type`, `second_type`, `ability` |
+| GET | `/pokedex/between?min=&max=` | By Pokédex ID range |
+| GET | `/pokedex/random?count=` | Random Pokémon (max 10) |
+| GET | `/pokedex/types` | List of all unique types |
+| GET | `/pokedex/abilities` | List of all unique abilities |
+| GET | `/pokedex/gen/:gen` | By generation (1–9) |
+| GET | `/pokedex/name/:name` | By name — partial, case-insensitive |
+| GET | `/pokedex/number/:id` | By Pokédex number |
+| GET | `/pokedex/type/:type` | By type (first or second) |
+| GET | `/pokedex/dual-type/:first/:second` | By exact dual type |
+| GET | `/pokedex/ability/:ability` | By ability — partial, case-insensitive |
+| GET | `/pokedex/stat/min/:stat` | Sorted by stat ascending |
+| GET | `/pokedex/stat/max/:stat` | Sorted by stat descending |
+| GET | `/pokedex/stat/range/:stat?min=&max=` | By stat value range |
+
+### Pagination — `GET /pokedex`
+
+| Param | Type | Required | Description |
+|-------|------|----------|-------------|
+| `page` | number | No | Page number (default: 1) |
+| `limit` | number | No | Results per page, max 200 (default: 100) |
+| `first_type` | string | No | Filter by primary type |
+| `second_type` | string | No | Filter by secondary type |
+| `ability` | string | No | Filter by exact ability |
+
+Response:
+
+```json
+{ "data": [...], "total": 1010, "page": 1, "limit": 100, "pages": 11 }
+```
+
+### Changelog
+
+**v2.0.0 — 2026-03-05**
+
+New endpoints: `GET /pokedex/types`, `GET /pokedex/abilities`, `GET /pokedex/random`, `GET /pokedex/dual-type/:first/:second`, `GET /pokedex/stat/range/:stat`
+
+Bug fixes: middleware registration order; silent ReferenceError in gen/type controllers; `/type/:type` ignored `second_type`; `between` min/max passed as strings to MongoDB numeric query; invalid stat failed silently; accidental global variables; removed deprecated Mongoose options.
+
+Performance: pagination on `GET /pokedex`; `.lean()` on all queries; MongoDB indexes on `ID`, `name`, `first_type`, `second_type`, `ability`.
+
+Usability: partial case-insensitive search on `/name/:name` and `/ability/:ability`; descriptive parameter validation errors.
+
+**v1.0.0 — 2024**
+
+Initial release with 9 basic Pokédex endpoints.
 
 ---
 
-<div align="center">
-  <p>⭐ Si te gustó este proyecto, ¡no olvides darle una estrella! ⭐</p>
-  <p>🔥 <strong>¡Gotta Fetch Them All!</strong> 🔥</p>
-</div>
+**Gotta Fetch Them All!**
