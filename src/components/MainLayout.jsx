@@ -24,9 +24,20 @@ function MainLayout() {
           </a>
         </div>
         <div className="footer-text">
-          <p>&copy; 2024 Gotta Fetch Them All API. Built with ❤️ by Thiago Zambonini</p>
+          <p>&copy; 2024 Gotta Fetch Them All API.</p>
         </div>
       </footer>
+      <div className="dev-footer">
+        <span>developed by</span>
+        <a href="https://interaktivesolutions.com" target="_blank" rel="noopener noreferrer" className="dev-footer-link">
+          <img
+            src="https://raw.githubusercontent.com/Remojs/Interaktive_QR-Manager/refs/heads/master/frontend/assets/logo.png"
+            alt="Interaktive logo"
+            className="dev-footer-logo"
+          />
+          INTERAKTIVE
+        </a>
+      </div>
     </div>
   )
 }

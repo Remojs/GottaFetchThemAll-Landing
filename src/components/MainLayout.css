@@ -58,6 +58,39 @@
   margin: 0;
 }
 
+.dev-footer {
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.75rem;
+  color: #666666;
+  letter-spacing: 0.03em;
+}
+
+.dev-footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #aaaaaa;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  transition: color 0.2s ease;
+}
+
+.dev-footer-link:hover {
+  color: #ffffff;
+}
+
+.dev-footer-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .main-footer {
     padding: 1.5rem 1rem;
