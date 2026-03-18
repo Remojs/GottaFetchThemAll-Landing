@@ -10,7 +10,7 @@
   [![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
   [![Axios](https://img.shields.io/badge/Axios-1.4.0-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
-  [Demo en Vivo](https://gottafetchthemall-landing.vercel.app) • [API Documentation](https://gottafetchthemall.onrender.com/) • [API Repository](https://github.com/Remojs/GottaFetchThemAll-API)
+  [Demo en Vivo](https://gottafetchthemall-landing.vercel.app) • [API Documentation](https://api.gottefetchthemallapi.site/) • [API Repository](https://github.com/Remojs/GottaFetchThemAll-API)
 </div>
 
 ## Objetivo del Proyecto
@@ -78,7 +78,7 @@ gfta-landing/
 
 ## API Documentation
 
-Base URL: `https://gottafetchthemall.onrender.com`
+Base URL: `https://api.gottefetchthemallapi.site`
 
 ### Data Model — Pokemon
 

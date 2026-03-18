@@ -16,7 +16,7 @@ function PokemonGrid() {
         for (let i = 0; i < 8; i++) {
           const randomId = Math.floor(Math.random() * 1010) + 1
           promises.push(
-            axios.get(`https://gottafetchthemall.onrender.com/pokedex/number/${randomId}`)
+            axios.get(`https://api.gottefetchthemallapi.site/pokedex/number/${randomId}`)
           )
         }
         
@@ -70,7 +70,7 @@ function PokemonGrid() {
         for (let i = 0; i < 8; i++) {
           const randomId = Math.floor(Math.random() * 1010) + 1
           promises.push(
-            axios.get(`https://gottafetchthemall.onrender.com/pokedex/number/${randomId}`)
+            axios.get(`https://api.gottefetchthemallapi.site/pokedex/number/${randomId}`)
           )
         }
         
@@ -123,7 +123,7 @@ function PokemonGrid() {
             </div>
             <div className="pokemon-info">
               <h3 className="pokemon-name">
-                <a href={`https://gottafetchthemall.onrender.com/pokedex/name/${poke.name}`} target="_blank" rel="noopener noreferrer">
+                <a href={`https://api.gottefetchthemallapi.site/pokedex/name/${poke.name}`} target="_blank" rel="noopener noreferrer">
                   {poke.name}
                 </a>
               </h3>
@@ -132,7 +132,7 @@ function PokemonGrid() {
                   className="pokemon-type" 
                   style={assignBackgroundColor(poke.first_type)}
                 >
-                  <a href={`https://gottafetchthemall.onrender.com/pokedex/type/${poke.first_type}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`https://api.gottefetchthemallapi.site/pokedex/type/${poke.first_type}`} target="_blank" rel="noopener noreferrer">
                     {poke.first_type}
                   </a>
                 </span>
@@ -141,14 +141,14 @@ function PokemonGrid() {
                     className="pokemon-type" 
                     style={assignBackgroundColor(poke.second_type)}
                   >
-                    <a href={`https://gottafetchthemall.onrender.com/pokedex/type/${poke.second_type}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://api.gottefetchthemallapi.site/pokedex/type/${poke.second_type}`} target="_blank" rel="noopener noreferrer">
                       {poke.second_type}
                     </a>
                   </span>
                 )}
               </div>
               <div className="pokemon-ability">
-                <a href={`https://gottafetchthemall.onrender.com/pokedex/ability/${poke.ability}`} target="_blank" rel="noopener noreferrer">
+                <a href={`https://api.gottefetchthemallapi.site/pokedex/ability/${poke.ability}`} target="_blank" rel="noopener noreferrer">
                   {poke.ability}
                 </a>
               </div>

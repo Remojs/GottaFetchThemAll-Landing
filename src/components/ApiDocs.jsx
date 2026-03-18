@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './ApiDocs.css'
 
-const BASE_URL = 'https://gottafetchthemall.onrender.com'
+const BASE_URL = 'https://api.gottefetchthemallapi.site'
 
 const VALID_TYPES = [
   'normal', 'fire', 'water', 'grass', 'flying', 'fighting',
@@ -578,7 +578,7 @@ function ApiDocs() {
         </p>
         <div className="api-base-url">
           <span className="base-url-label">Base URL</span>
-          <code className="base-url-value">https://gottafetchthemall.onrender.com</code>
+          <code className="base-url-value">https://api.gottefetchthemallapi.site</code>
         </div>
       </div>
 
@@ -627,7 +627,7 @@ function ApiDocs() {
             <a href="https://github.com/Remojs/GottaFetchThemAll-API" target="_blank" rel="noopener noreferrer">
               GitHub Repository
             </a>
-            <a href="https://gottafetchthemall.onrender.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.gottefetchthemallapi.site" target="_blank" rel="noopener noreferrer">
               Live API
             </a>
           </div>
